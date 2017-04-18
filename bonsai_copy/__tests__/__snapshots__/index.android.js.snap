@@ -1,0 +1,901 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index has correct number of jobs 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "transform": Array [
+              Object {
+                "translateX": 0,
+              },
+              Object {
+                "translateY": 0,
+              },
+              Object {
+                "scaleX": 1,
+              },
+              Object {
+                "scaleY": 1,
+              },
+              Object {
+                "rotate": "0deg",
+              },
+              Object {
+                "skewX": "0deg",
+              },
+              Object {
+                "skewY": "0deg",
+              },
+            ],
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "borderBottomColor": "#dadada",
+                "borderBottomWidth": 1,
+                "flexDirection": "row",
+                "height": 70,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "marginLeft": 20,
+                  "marginTop": 20,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "black",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                Lediga Jobb
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "flex-end",
+                }
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Object {
+                "flex": 1,
+                "height": null,
+                "width": null,
+              }
+            }
+          >
+            <RCTScrollView
+              dataSource={
+                ListViewDataSource {
+                  "items": 4,
+                }
+              }
+              renderRow={[Function]}
+              renderScrollComponent={[Function]}
+            >
+              <View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
+                  accessible={true}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "white",
+                        "borderBottomColor": "#dadada",
+                        "borderBottomWidth": 1,
+                        "borderLeftColor": "#3fb2ff",
+                        "borderLeftWidth": 5,
+                        "flexDirection": "row",
+                        "height": 80,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-start",
+                          "flex": 5,
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#595959",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        Fotografering av ett antal idrottsevent - tillsammans med proffsfotograf
+                      </Text>
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#959595",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                            "marginTop": 5,
+                          }
+                        }
+                      >
+                        Senast klar: 
+                        Måndagen 10 maj
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-end",
+                          "flex": 3,
+                          "justifyContent": "center",
+                          "marginRight": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={1}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 29,
+                            "justifyContent": "center",
+                            "width": 77,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "color": "#3fb2ff",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          51200
+                          kr
+                        </Text>
+                      </Image>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
+                  accessible={true}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#fafafa",
+                        "borderBottomColor": "#dadada",
+                        "borderBottomWidth": 1,
+                        "borderLeftColor": "#20c8b6",
+                        "borderLeftWidth": 5,
+                        "flexDirection": "row",
+                        "height": 80,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-start",
+                          "flex": 5,
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#595959",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        Keklordjobbet
+                      </Text>
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#959595",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                            "marginTop": 5,
+                          }
+                        }
+                      >
+                        Senast klar: 
+                        Lördag 20 dec 2018
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-end",
+                          "flex": 3,
+                          "justifyContent": "center",
+                          "marginRight": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={1}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 29,
+                            "justifyContent": "center",
+                            "width": 77,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "color": "#20c8b6",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          42
+                          kr
+                        </Text>
+                      </Image>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
+                  accessible={true}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "white",
+                        "borderBottomColor": "#dadada",
+                        "borderBottomWidth": 1,
+                        "borderLeftColor": "#3fb2ff",
+                        "borderLeftWidth": 5,
+                        "flexDirection": "row",
+                        "height": 80,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-start",
+                          "flex": 5,
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#595959",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        Tentafuskare
+                      </Text>
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#959595",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                            "marginTop": 5,
+                          }
+                        }
+                      >
+                        Senast klar: 
+                        Torsdag 20 apr
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-end",
+                          "flex": 3,
+                          "justifyContent": "center",
+                          "marginRight": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={1}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 29,
+                            "justifyContent": "center",
+                            "width": 77,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "color": "#3fb2ff",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          1337
+                          kr
+                        </Text>
+                      </Image>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
+                  accessible={true}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#fafafa",
+                        "borderBottomColor": "#dadada",
+                        "borderBottomWidth": 1,
+                        "borderLeftColor": "#20c8b6",
+                        "borderLeftWidth": 5,
+                        "flexDirection": "row",
+                        "height": 80,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-start",
+                          "flex": 5,
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#595959",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        Bonsai Kopierare
+                      </Text>
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#959595",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 14,
+                            "marginLeft": 15,
+                            "marginTop": 5,
+                          }
+                        }
+                      >
+                        Senast klar: 
+                        Igår kväll
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-end",
+                          "flex": 3,
+                          "justifyContent": "center",
+                          "marginRight": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={1}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 29,
+                            "justifyContent": "center",
+                            "width": 77,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "color": "#20c8b6",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          0
+                          kr
+                        </Text>
+                      </Image>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </RCTScrollView>
+          </Image>
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "white",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+                "height": 55,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "marginTop": 10,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 12,
+                      },
+                      Array [
+                        Object {
+                          "color": "#959595",
+                          "fontSize": 20,
+                        },
+                        Object {
+                          "color": "#3fb2ff",
+                        },
+                      ],
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                  <Text
+                    accessible={true}
+                    allowFontScaling={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "red",
+                          "fontSize": 15,
+                          "marginRight": 100,
+                        },
+                        Object {
+                          "fontFamily": "FontAwesome",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                      ]
+                    }
+                  >
+                    
+                  </Text>
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#959595",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 13,
+                      },
+                      Object {
+                        "color": "#3fb2ff",
+                      },
+                    ]
+                  }
+                >
+                  Lediga jobb
+                </Text>
+              </View>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                    "opacity": 1,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                      "justifyContent": "center",
+                      "marginTop": 10,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#959595",
+                          "fontSize": 20,
+                        },
+                        Object {
+                          "fontFamily": "FontAwesome",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                      ]
+                    }
+                  >
+                    
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#959595",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 13,
+                      }
+                    }
+                  >
+                    Mina jobb
+                  </Text>
+                </View>
+              </View>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                    "opacity": 1,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                      "justifyContent": "center",
+                      "marginTop": 10,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#959595",
+                          "fontSize": 20,
+                        },
+                        Object {
+                          "fontFamily": "FontAwesome",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                      ]
+                    }
+                  >
+                    
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#959595",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 13,
+                      }
+                    }
+                  >
+                    Profil
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

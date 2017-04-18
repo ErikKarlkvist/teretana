@@ -1,0 +1,3 @@
+rootProject.name = 'bonsai_copy'
+
+include ':app'

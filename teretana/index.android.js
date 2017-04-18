@@ -4,30 +4,77 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+ import React, { Component } from 'react';
+ import {
+   AppRegistry,
+   StyleSheet,
+   Text,
+   View,
+   ListView,
+   ScrollView,
+   Navigator,
+   AlertIOS,
+   Console
+ } from 'react-native';
+ import AllSetsList from './Components/AllSetsList';
+ import LoginPage from './Components/LoginPage';
+ import Firebase from './Components/Firebase';
+ import AddItem from './Components/AddItem';
+ import * as firebase from 'firebase';
 
 export default class teretana extends Component {
+  constructor(){
+    super();
+    Firebase.initialize();
+    this.renderScene = this.renderScene.bind(this);
+
+    this.getInitialView();
+    this.state = {
+      userLoaded: false,
+      initialView: null,
+      itemRef: null
+    }
+    this.getInitialView = this.getInitialView.bind(this);
+  }
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
-    );
+    if(this.state.userLoaded){
+      return (
+        <Navigator
+          initialRoute= {{name: this.state.initialView}}
+          renderScene={this.renderScene}/>
+      );
+    } else {
+      return null;
+    }
+  }
+
+  renderScene(route, navigator) {
+     if(route.name == 'LoginPage'){
+       return <LoginPage navigator={navigator}/>
+     }else if(route.name == 'AllSetsList') {
+       return <AllSetsList navigator={navigator}/>
+     }else if(route.name == 'AddItem') {
+       return <AddItem navigator={navigator}/>
+     }
+  }
+
+  getInitialView() {
+
+    firebase.auth().onAuthStateChanged((userAvailable) => {
+    //  let initialView = user ? "AllSetsList" : "LoginPage";
+      //let initialView = "LoginPage"
+      if(userAvailable){
+        this.setState({
+          userLoaded: true,
+          initialView: 'AllSetsList',
+        });
+      } else {
+        this.setState({
+          userLoaded: true,
+          initialView: 'LoginPage',
+        });
+      }
+    });
   }
 }
 

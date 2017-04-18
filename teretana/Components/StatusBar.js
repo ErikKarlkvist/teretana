@@ -3,13 +3,12 @@ import React, {Component} from 'react';
 import ReactNative from 'react-native';
 import * as firebase from 'firebase';
 const styles = require('./styles.js')
-const { StyleSheet, Text, View, Button, AlertIOS} = ReactNative;
+const { StyleSheet, Text, View, Button, AlertIOS, StatusBar} = ReactNative;
 
 class StatusBar extends Component {
   render() {
     return (
       <View>
-        <View style = {{height: 20, alignSelf: 'stretch', backgroundColor: '#F38630'}}/>
         <View style={{height: 60, flexDirection:'row', alignSelf:'stretch',backgroundColor: '#F38630', alignItems:'center'}}>
           <View style={{}}>
             <Button
