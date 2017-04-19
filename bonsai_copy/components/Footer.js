@@ -28,10 +28,10 @@ class Footer extends Component {
       this.state.active =
       <View style = {styles.footerIcons}>
         <View style = {styles.footerSymbolContainer} >
-          <Icon name="search" style = {[styles.footerSymbol, styles.footerTextActive]}>
-            <Icon name="circle" style= {{color: 'red', fontSize: 15, marginRight: 100}}/>
-          </Icon>
-          <Text style = {[styles.footerText, styles.footerTextActive]}>Lediga jobb</Text>
+          <Icon name="search" style = {[styles.footerSymbol, styles.footerTextActive]}/>
+          <Icon name="circle" style= {styles.freeJobNumFreeJobsDisp}/>
+          <Text style = {styles.numberOfJobsText}>{this.props.numberOfJobs}</Text>
+          <Text style = {[styles.footerText, styles.footerTextActive, {marginTop: 12}]}>Lediga jobb</Text>
         </View>
         <TouchableOpacity onPress = {this.MyJobs} style = {{flex:1}}>
           <View style = {styles.footerSymbolContainer}>
@@ -53,7 +53,9 @@ class Footer extends Component {
         <TouchableOpacity onPress = {this.FreeJobs} style = {{flex:1}}>
           <View style = {styles.footerSymbolContainer} >
             <Icon name="search" style = {styles.footerSymbol}/>
-            <Text style = {styles.footerText}>Lediga jobb</Text>
+            <Icon name="circle" style= {styles.freeJobNumFreeJobsDisp}/>
+            <Text style = {styles.numberOfJobsText}>{this.props.numberOfJobs}</Text>
+            <Text style = {[styles.footerText, {marginTop: 12}]}>Lediga jobb</Text>
           </View>
         </TouchableOpacity>
         <View style = {styles.footerSymbolContainer}>
@@ -74,7 +76,9 @@ class Footer extends Component {
         <TouchableOpacity onPress = {this.FreeJobs} style = {{flex:1}}>
           <View style = {styles.footerSymbolContainer} >
             <Icon name="search" style = {styles.footerSymbol}/>
-            <Text style = {styles.footerText}>Lediga jobb</Text>
+            <Icon name="circle" style= {styles.freeJobNumFreeJobsDisp}/>
+            <Text style = {styles.numberOfJobsText}>{this.props.numberOfJobs}</Text>
+            <Text style = {[styles.footerText, {marginTop: 12}]}>Lediga jobb</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress = {this.MyJobs} style = {{flex:1}}>

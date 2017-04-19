@@ -29,7 +29,7 @@ class FreeJobs extends Component {
             {this.state.content}
           </Image>
         </View>
-        <Footer currentlyActive = 'FreeJobs' navigator = {this.props.navigator}/>
+        <Footer currentlyActive = 'FreeJobs' navigator = {this.props.navigator} numberOfJobs = {this.props.numberOfJobs}/>
       </View>
     );
   }

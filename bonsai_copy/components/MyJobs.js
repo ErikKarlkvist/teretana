@@ -25,7 +25,7 @@ class MyJobs extends Component {
             {this.state.content}
           </Image>
         </View>
-        <Footer currentlyActive = 'MyJobs' navigator = {this.props.navigator}/>
+        <Footer currentlyActive = 'MyJobs' navigator = {this.props.navigator} numberOfJobs = {this.props.numberOfJobs}/>
       </View>
     );
   }

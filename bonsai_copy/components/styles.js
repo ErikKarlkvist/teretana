@@ -187,8 +187,8 @@ var styles = StyleSheet.create({
     alignItems:'center'
   },
   noResult: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginLeft: 130,
+    marginTop: 100,
     flex: 1,
   },
   myJobtext: {
@@ -257,6 +257,19 @@ var styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 10,
     fontSize: 15
+  },
+  freeJobNumFreeJobsDisp: {
+    color: 'red',
+    fontSize: 15,
+    marginRight: -15,
+    marginTop: -25
+  },
+  numberOfJobsText: {
+    backgroundColor: 'red',
+    fontSize: 9,
+    marginTop: -13,
+    marginRight: -15,
+    color: 'white'
   }
 });
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index has correct number of jobs 1`] = `
+exports[`<Index /> renders correctly 1`] = `
 <View
   style={
     Array [
@@ -348,7 +348,7 @@ exports[`Index has correct number of jobs 1`] = `
                           }
                         }
                       >
-                        Keklordjobbet
+                        Dataövervakare
                       </Text>
                       <Text
                         accessible={true}
@@ -699,31 +699,48 @@ exports[`Index has correct number of jobs 1`] = `
                   }
                 >
                   
-                  <Text
-                    accessible={true}
-                    allowFontScaling={false}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "color": undefined,
-                          "fontSize": 12,
-                        },
-                        Object {
-                          "color": "red",
-                          "fontSize": 15,
-                          "marginRight": 100,
-                        },
-                        Object {
-                          "fontFamily": "FontAwesome",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                        },
-                      ]
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 12,
+                      },
+                      Object {
+                        "color": "red",
+                        "fontSize": 15,
+                        "marginRight": -15,
+                        "marginTop": -25,
+                      },
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "backgroundColor": "red",
+                      "color": "white",
+                      "fontSize": 9,
+                      "marginRight": -15,
+                      "marginTop": -13,
                     }
-                  >
-                    
-                  </Text>
+                  }
+                >
+                  4
                 </Text>
                 <Text
                   accessible={true}
@@ -738,6 +755,9 @@ exports[`Index has correct number of jobs 1`] = `
                       },
                       Object {
                         "color": "#3fb2ff",
+                      },
+                      Object {
+                        "marginTop": 12,
                       },
                     ]
                   }

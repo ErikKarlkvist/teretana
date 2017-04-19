@@ -26,7 +26,7 @@ export default class bonsai_copy extends Component {
   constructor(props){
     super(props);
     this.renderScene = this.renderScene.bind(this);
-    this._testAddItem = this._testAddItem.bind(this);
+    this.createItem = this.createItem.bind(this);
     this.state = {
       items: [],
       initialView: 'FreeJobs',
@@ -51,20 +51,6 @@ export default class bonsai_copy extends Component {
         }}
         />
     );
-  }
-
-  _testAddItem(){
-    this.state.items.push({
-      overview: 'Test',
-      date: 'Test',
-      earning: 'Test',
-      colour: 'Test',
-      company: 'Test',
-      adress: 'Test',
-      contactPerson: 'Test',
-      contactNumber: 'Test',
-      jobType: 'Test'
-    });
   }
 
   createItem(overview, date, earning, company, adress, contactPerson, contactNumber, jobType){
@@ -100,11 +86,11 @@ export default class bonsai_copy extends Component {
   renderScene(route, navigator) {
     this.state.nextView = route.name;
     if(route.name == 'FreeJobs'){
-     return <FreeJobs navigator={navigator} dataSource={this.state.freeJobsSource}/>
+     return <FreeJobs navigator={navigator} dataSource={this.state.freeJobsSource} numberOfJobs = {this.state.items.length}/>
     }else if(route.name == 'MyJobs') {
-     return <MyJobs navigator={navigator}/>
+     return <MyJobs navigator={navigator} numberOfJobs = {this.state.items.length}/>
     }else if(route.name == 'Profile') {
-     return <Profile navigator={navigator}/>
+     return <Profile navigator={navigator} numberOfJobs = {this.state.items.length}/>
     }else if(route.name == 'JobPage'){
      return <JobPage navigator={navigator} item = {route.item}/>
     }

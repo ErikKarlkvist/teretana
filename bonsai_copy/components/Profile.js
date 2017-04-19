@@ -44,7 +44,7 @@ class Profile extends Component {
             <Text style = {styles.versionText}>Version: 1.1</Text>
           </View>
         </ScrollView>
-        <Footer currentlyActive = 'Profile' navigator = {this.props.navigator}/>
+        <Footer currentlyActive = 'Profile' navigator = {this.props.navigator} numberOfJobs = {this.props.numberOfJobs}/>
       </View>
     );
   }

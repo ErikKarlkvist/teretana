@@ -26,6 +26,7 @@ export default class bonsai_copy extends Component {
   constructor(props){
     super(props);
     this.renderScene = this.renderScene.bind(this);
+    this.createItem = this.createItem.bind(this);
     this.state = {
       items: [],
       initialView: 'FreeJobs',
@@ -76,7 +77,7 @@ export default class bonsai_copy extends Component {
   }
 
   componentDidMount(){
-      this.createItem('Fotografering av ett antal idrottsevent - tillsammans med proffsfotograf', 'Måndagen 10 maj', '51200', 'Bonsai', 'Tuffagatan 12', 'Sven Ingvar Jönsson', '0712345678', 'Engångsuppdrag');
+      this.createItem('Fotografering av ett antal idrottsevent', 'Måndagen 10 maj', '51200', 'Bonsai', 'Tuffagatan 12', 'Sven Ingvar Jönsson', '0712345678', 'Engångsuppdrag');
       this.createItem('Dataövervakare', 'Lördag 20 dec 2018', '42', 'Google', 'Långt bort', 'Sergey Brin', 'Secret', 'Spioneri');
       this.createItem('Tentafuskare', 'Torsdag 20 apr', '1337', 'Chalmers', 'Chalmers Tvärgata', 'Mr. Chalmers', '123123123', 'Tentafusk');
       this.createItem('Bonsai Kopierare', 'Igår kväll', '0', 'Bonsai', 'Hemma', 'Alexander', '#DetCoolasteNumretIStan', '"React Native"-övning');
@@ -85,11 +86,11 @@ export default class bonsai_copy extends Component {
   renderScene(route, navigator) {
     this.state.nextView = route.name;
     if(route.name == 'FreeJobs'){
-     return <FreeJobs navigator={navigator} dataSource={this.state.freeJobsSource}/>
+     return <FreeJobs navigator={navigator} dataSource={this.state.freeJobsSource} numberOfJobs = {this.state.items.length}/>
     }else if(route.name == 'MyJobs') {
-     return <MyJobs navigator={navigator}/>
+     return <MyJobs navigator={navigator} numberOfJobs = {this.state.items.length}/>
     }else if(route.name == 'Profile') {
-     return <Profile navigator={navigator}/>
+     return <Profile navigator={navigator} numberOfJobs = {this.state.items.length}/>
     }else if(route.name == 'JobPage'){
      return <JobPage navigator={navigator} item = {route.item}/>
     }
